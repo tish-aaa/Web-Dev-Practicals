@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> prime no </title>
+
+<script type="text/Javascript">
+function primeno()
+{
+var n=parseInt(document.f1.t1.value);
+var i=2;
+var temp=1;	
+if(n==1)
+{
+	document.write("it neither a prime no nor composite");
+}
+else
+{
+	for(i=2;i<n;i++)
+	{
+		if(n%i==0)
+		{
+			temp++;
+		}
+	}
+}
+
+if(temp<=2)
+{
+document.write(n+" is a Prime Number.");
+}
+else
+{
+document.write(n+"is not a Prime Number.");
+}
+}
+</script>
+</head>
+
+<body>
+<form name="f1" method="post">
+Enter Number:
+<input type="text" name="t1">
+<input type="submit" onclick="primeno()">
+</form>
+</body>
+</html>
