@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Fibonacci Series </title>
+<script type="text/Javascript">
+function sum()
+{
+	var n=parseInt(document.f1.t1.value);
+	var no=n;
+	var sum=0;
+	while(n>0)
+	{
+		var a=parseInt(n%10);
+		sum=parseInt(sum+a);
+		n=parseInt(n/10);
+	}
+	document.write("<h3><u>The Sum of Digits of "+no+" is "+sum+".</u></h3>");
+}
+</script>
+</head>
+
+<body>
+<h2> Practical 3: Java Script </h2> <hr>
+<h4><u>Display the sum of digits of the entered number.</u></h4>
+<form name="f1" method="post">
+<b> Enter a number: </b> 
+<input type="text" name="t1"> <br><br>
+<input type="submit" name="s" onclick="sum()"> <br>
+</form>
+</body>
+</html>
