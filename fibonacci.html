@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Fibonacci Series </title>
+
+<script type="text/Javascript">
+function fibo()
+{
+	var n=parseInt(document.f1.t1.value);
+	var a=0;
+	var b=1;
+	var sum=0;
+	document.write("<b>The Fibonacci Series: </b>");
+	document.write(a+",");
+	document.write(b+",");
+	for(var i=3;i<n;i++)
+	{
+		sum=a+b;
+		document.write(sum+",");
+		a=b;
+		b=sum;
+	}
+	
+}
+</script>
+</head>
+
+<body>
+<h2> Practical 3: Java Script </h2> <hr>
+<h4><u>To find the Fibonacci Series upto a limit.</u></h4>
+
+<form name="f1" method="post">
+<b> Enter a limit: </b> 
+<input type="text" name="t1"> <br><br>
+<input type="submit" name="s" onclick="fibo()"> <br>
+</form>
+</body>
+</html>
